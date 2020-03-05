@@ -1,23 +1,23 @@
 
 //Connection to the database using mySQL username and password
-//Require node package and mysql package
+//npm inquirerpackage and mysql package
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
   host: "localhost",
 
-  // Your port; if not 3306
+  // Port
   port: 3306,
 
-  // Your username
+  // username
   user: "root",
 
-  // Your password
-  password: "Welovelinklori.",
+  //password
+  password: "",
   database: "bamazon_DB"
 });
-//Connected
+//Connect mysql to node
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId + "\n");
@@ -55,11 +55,9 @@ function start() {
  });
 };
 
-// //show selected
-
-
-// //Update mySQL database with reduced inventory
-// //Show customer total (query)
+//show selected
+//Update mySQL database with reduced inventory
+//Show customer total (query)
 //Method query to comparing user and stock quantities 
 function purchaseOrder(ID, stockAmt){
 	connection.query('Select * FROM products WHERE item_id = ' + ID, function(err,res){
