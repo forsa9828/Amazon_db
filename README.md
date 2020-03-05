@@ -12,7 +12,7 @@ Created a MySQL database that connects to the node application. This will displa
 
 Saved and Required NPM Packages that installed our node_modules (npm install mysql). This allows Node.js to manipulate the SQL.
 
-Created a connection !![image]https://github.com/forsa9828/bamazon/blob/master/Query.PNG
+Created a connection ![image](https://github.com/forsa9828/bamazon/blob/master/Query.PNG)
 
 Created a mySQL database and created a table called products, columns with paramaters and rows with 10 inserted values
 
